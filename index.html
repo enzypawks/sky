@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skymarket</title>
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config= {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#15172b',
+                        secondary: '#23253b',
+                        thirdty: '#4b4f80',
+                        fourty: '#2a2c47'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="max-w-2xl m-auto text-white bg-primary">
+    <header class="px-2 sm:px-4 py-2.5 mx-auto bg-secondary sticky top-0 z-30 shadow-md">
+        <div class="container flex flex-wrap items-center justify-between mx-auto">
+            <div class="container flex flex-wrap items-center justify-between mx-auto">
+                <div class="flex items-center">
+                    <img src="assets/img/Frame 4.jpg" class="ml-2 rounded-md h-18 w-16" alt="">
+                    <div class="ml-3">
+                        <a href=""><h1 class="text-2xl font-semibold hover:text-thirdty transition duration-150 ease-in-out">Market</h1></a>
+                        <span class="text-sm">Enjoy our Product's!!</span>
+                    </div>
+                </div>
+                <button type="button" class="text-white bg-thirdty hover:bg-primary font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 md:mr-0 transition duration-100 ease-in-out"><a href="#">Get Started</a></button>
+            </div>
+        </div>
+    </header>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              class=""
+              src="assets/img/rok1.jpeg"
+              alt="image"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class=""
+              src="assets/img/rok1.jpeg"
+              alt="image"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class=""
+              src="assets/img/rok1.jpeg"
+              alt="image"
+            />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <section class="mt-2 text-center">
+        <h1 class="text-xl font-semibold">Maintenance</h1>
+        <span class="text-stone-400">Mohon maaf, web ini sedang dalam masa pemeliharaan sampai dengan waktu yang tidak ditentukan.</span>
+    </section>
+
+    <section class="mt-6">
+      <div class="px-2 py-4 bg-secondary rounded-md">
+        <h1 class="font-semibold text-xl text-center">Dapatkan Pemberitahuan</h1>
+        <form action="#">
+          <div class="max-w-sm mx-auto p-1 pr-0 flex items-center mt-2">
+            <input type="email" placeholder="yourmail@example.com" class="text-md text-stone-700 flex-1 appearance-none rounded-full shadow px-5 py-2 text-grey-dark mr-2 focus:outline-none">
+            <button type="submit" class="text-white bg-thirdty hover:bg-primary font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 md:mr-0 transition duration-100 ease-in-out">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="mt-4 text-center">
+      <h2 class="font-semibold text-sm mb-4">2023 <a href="#" class="hover:text-thirdty">Skymarket &rarr;</a></h2>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        autoplay: {
+            delay: 5000,
+        }
+      });
+</script>
+</html>
